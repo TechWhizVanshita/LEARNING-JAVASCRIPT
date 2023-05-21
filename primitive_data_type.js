@@ -17,3 +17,13 @@ let f = BigInt ("54") + BigInt("76");
 let g 
 console.log(a,b,c,d,e,f,g)
 
+//Non primitive data type - Objects
+
+const item ={
+    "Guru" : true,
+    "Love" : false,
+    "Avi" : 89,
+    "Raj" : undefined
+}
+console.log(item["Avi"])
+
