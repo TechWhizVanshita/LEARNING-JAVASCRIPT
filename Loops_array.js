@@ -24,7 +24,7 @@
 
  //for_ _ _of loop
 
- let num1 = [2 ,9 ,6 ,7 ,5 ,4 ,10]
+ let num1 = [21 ,93 ,65 ,7 ,55 ,43 ,10]
  for(let item of num1){
     console.log(item)
 
