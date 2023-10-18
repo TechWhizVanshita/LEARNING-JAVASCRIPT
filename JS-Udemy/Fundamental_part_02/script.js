@@ -109,8 +109,69 @@ console.log(persons.includes('Damini'));
 
 //objects(key-value pairs)
 
+const virat = {
+    firstName: 'Virat',
+    lastName: 'Kohli',
+    age: 2047-1992,
+    job: 'Cricketer',
+    friends: ['Anushka','Shikhar','Soumya']
+};
+
+console.log(virat);
+
+//Accessing key-value pairs with (.) -> dot notation
+console.log(virat.lastName);
+
+//Accessing key-value pairs with [] -> bracket notation
+console.log(virat['lastName']);
+
+const nameKey = 'Name';
+console.log(virat['first' + nameKey]);
+console.log(virat['last' + nameKey]);
 
 
+//Asking user to chose key-value pair
+
+const interestedIn = prompt('What do you want to know about Virat? Chose between firstName, lastName, age, job and friends?');
+console.log(virat[interestedIn]);
+
+//To add key-value pair
+
+virat.location = 'Mumbai';
+virat.wife = 'Anushka';
+
+console.log(virat);
+
+//Print 'Virat has 3 friends, and his best friend is called 'Anuskha'
+
+console.log(`${virat.firstName} has ${virat.friends.length} friends, and his best friend is called '${virat.friends[0]}'`);
 
 
+//Object methods
 
+const uncle ={
+    firstName: 'Uncle',
+    lastName: 'John',
+    birthYear: 1957,
+    calcAge: function(){
+        return 2023-this.birthYear;
+    },
+};
+
+console.log(uncle.calcAge());
+console.log(uncle['calcAge'](this.birthYear));
+
+
+//loops
+
+const rohit = [
+    'Rohit',
+    'Sharma',
+    2047-1991,
+    'Bowler',
+    ['Hardik','Ishan','Rahul']
+];
+
+for(let i = 0; i<=(rohit.length-1); i++){
+    console.log(rohit[i]);
+}
