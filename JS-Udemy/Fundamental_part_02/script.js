@@ -172,6 +172,24 @@ const rohit = [
     ['Hardik','Ishan','Rahul']
 ];
 
+const types = [];
+
 for(let i = 0; i<=(rohit.length-1); i++){
+
+    //reading from rohit's array
     console.log(rohit[i]);
+
+    //filling types array
+    types[i] = typeof rohit[i];
+}
+
+console.log(types);
+
+//While loop
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while(dice!==6){
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
 }
