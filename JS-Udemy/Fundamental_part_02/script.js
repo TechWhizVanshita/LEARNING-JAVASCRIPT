@@ -1,11 +1,35 @@
 'use strict';
 
+<<<<<<< Updated upstream
 function logger() {
     console.log('My name is Vanshita');
+=======
+// function logger(){
+//     console.log('My name is Vanshita');
+// }
+
+// logger();
+
+// function fruitProcessor(apples, oranges){
+//     console.log(apples,oranges);
+//     const juice = `Juice with ${apples} and ${oranges} oranges.`
+//     return juice;
+// }
+
+// const appleJuice = fruitProcessor(5, 4);
+// console.log(appleJuice )
+
+//Function declaration
+
+const age1 = (calcAge1(1991));
+function calcAge1(birthYear){
+    return 2037-birthYear;
+>>>>>>> Stashed changes
 }
 
-logger();
+//In function declaration, we can declare function before/after it declaration.
 
+<<<<<<< Updated upstream
 function fruitProcessor(apples, oranges) {
     console.log(apples, oranges);
     const juice = `Juice with ${apples} and ${oranges} oranges.`
@@ -191,3 +215,32 @@ while (dice !== 6) {
     console.log(`You rolled a ${dice}`);
     dice = Math.trunc(Math.random() * 6) + 1;
 }
+=======
+//Function expression
+
+const calcAge2 = function (birthYear){
+    return 2037 - birthYear;
+}
+
+const age2 = calcAge2(1991);
+
+console.log(age1 ,age2);
+
+//Arrow functions
+
+//With one parameter, we don't use return keyword.
+
+const calcAge3 = birthYear => 2037 - birthYear;
+
+const age3 = calcAge3(1991);
+
+//With one or more parameters we use curly braces{} 
+
+const yearsUntilRetirement = (birthYear) =>{
+    const age = 2037 - birthYear;
+    const retirement = 65 - age;
+    return retirement;
+}
+
+console.log(yearsUntilRetirement(1998), age3);
+>>>>>>> Stashed changes
